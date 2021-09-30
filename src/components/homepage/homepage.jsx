@@ -15,7 +15,7 @@ class Homepage extends React.Component {
             A nest of <span className="subheading__text__highlight">Special Writing Jutsu</span>!
           </p>
           <p className="subheading__text">
-            Join the community to learn and teach about various Jutsu!
+            Write about what you felt about favourite anime and share it with the world!
           </p>
         </div>
         <div className="content__body">

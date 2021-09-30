@@ -1,4 +1,4 @@
-.nav {
+.nav__home {
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -7,7 +7,16 @@
   background-color: transparent;
 }
 
-.nav .nav__container {
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #011627;
+}
+
+.nav__container {
   width: 40%;
   display: flex;
   flex-direction: row;
@@ -15,7 +24,7 @@
   align-items: center;
 }
 
-.nav .nav__container .nav__item {
+.nav__container .nav__item {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   margin: 0 1rem;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
@@ -23,7 +32,7 @@
   text-underline-offset: 0.4em;
 }
 
-.nav .nav__container .nav__item:hover {
+.nav__container .nav__item:hover {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   margin: 0 1rem;
   text-decoration-color: rgba(255, 255, 255, 1);
