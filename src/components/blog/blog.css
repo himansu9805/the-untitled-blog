@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
 .blog {
-  height: 100vh;
+  width: calc(9 * 100% / 10);
+  margin: 0 auto;
 }
 
 .blog__content {
+  width: calc(2 * 100% / 3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,34 +19,83 @@
   color: #011627;
 }
 
+.blog__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .blog__card {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  background-color: #011627;
-  border-radius: 50px;
-  padding: 25px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .blog__card .blog__card__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #f6f7f8;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #37392e;
 }
 
 .blog__card .blog__card__image {
-  height: 75%;
-  margin-right: 10px;
+  height: 150px;
+  margin-left: 10px;
   border-radius: 20px;
 }
 
 .blog__card .blog__card__content .blog__card__heading {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  margin: 0px;
+  font-family: "Old Standard TT", serif;
 }
 
-.blog__card .blog__card__content .blog__card__subheading {
+.blog__card .blog__card__content .blog__card__description {
   font-size: 1rem;
+  margin: 0;
+  margin-top: 5px;
+  color: #535353;
+  font-family: "Inter", sans-serif;
+}
+
+.blog__card .blog__card__content .blog__card__info {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #535353;
+}
+
+.blog__card .blog__card__content .blog__card__info .blog__card__tag {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  border-radius: 100px;
+  background-color: #eee5e5;
+  padding: 5px;
+}
+
+.blog__card .blog__card__content .blog__card__author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog__card .blog__card__content .blog__card__author .author__image {
+  height: 20px;
+  border-radius: 100%;
+}
+
+.blog__card .blog__card__content .blog__card__author .author__name {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 10px;
 }
