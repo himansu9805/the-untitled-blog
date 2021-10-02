@@ -1,9 +1,15 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 import './homepage.css';
 import './typewriter.css';
 
 class Homepage extends React.Component {
+
+  gotoBlog = (param) => {
+    this.props.history.push(`/blog`);
+  }
+
   render() {
     return (
       <div className="main__context">
@@ -19,11 +25,11 @@ class Homepage extends React.Component {
           </p>
         </div>
         <div className="content__body">
-          <button className="transparent__button">Read Blogs</button>
+          <button className="transparent__button" onClick={() => this.gotoBlog()}>Read Blogs</button>
         </div>
       </div>
     );
   }
 }
 
-export default Homepage;
+export default withRouter(Homepage);
