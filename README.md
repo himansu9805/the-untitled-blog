@@ -4,8 +4,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Blog Integration Branch
 
-Currently the Blog UI looks like following:
+01 Oct 2021:
 
-![alt text](./screenshots/001.png)
+![001](./screenshots/001.png)
+
+02 Oct 2021:
+
+![002](./screenshots/002.png)
 
 `⚠ NOTE: This project is under development.`
