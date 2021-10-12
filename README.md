@@ -12,7 +12,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ![002](./screenshots/002.png)
 
-12 Oct 2023:
+12 Oct 2021:
 
 ![003](./screenshots/003.png)
 
