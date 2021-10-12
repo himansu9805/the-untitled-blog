@@ -1,19 +1,20 @@
 import React from "react";
 
 import BlogCard from "./blog_card";
+import DummyData from "./dummy_data";
 
 import './blog.css';
 
 class Blog extends React.Component {
   render() {
     return (
-      <div className="blog">
+      <div className="blog__list">
         <div className="blog__content">
           <h1 className="header__text">LATEST BLOGS</h1>
           <div className="blog__column">
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+            <BlogCard data={DummyData} />
+            <BlogCard data={DummyData} />
+            <BlogCard data={DummyData} />
           </div>
         </div>
         <div className="blog__discover">

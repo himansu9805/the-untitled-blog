@@ -8,6 +8,7 @@ import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Homepage from "./components/homepage/homepage";
 import Blog from './components/blog/blog';
+import BlogComplete from './components/blog/blog_complete';
 
 import './App.css';
 
@@ -25,6 +26,10 @@ function App() {
           <Route exact path="/blog">
             <Header />
             <Blog />
+          </Route>
+          <Route exact path="/dummyBlog">
+            <Header />
+            <BlogComplete />
           </Route>
         </Switch>
         <Footer />
