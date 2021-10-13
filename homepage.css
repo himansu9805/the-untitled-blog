@@ -1,0 +1,70 @@
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 20em;
+}
+
+.main__subheading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__subheading .subheading__text {
+  color: #f6f7f8;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.main__subheading .subheading__text .subheading__text__highlight {
+  font-weight: bold;
+  text-decoration: dotted underline;
+  text-underline-offset: 0.4em;
+}
+
+.content__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__body .transparent__button {
+  padding: 12px 30px;
+  margin: 8px 2px;
+  background-color: transparent;
+  border: 2px solid #ff3366;
+  border-radius: 5px;
+  color: #f6f7f8;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.content__body .transparent__button:hover {
+  background-color: #ff3366;
+  border: 2px solid;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+@media (max-width: 820px) {
+  .main__subheading .subheading__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .main__subheading .subheading__text {
+    color: #f6f7f8;
+    font-size: 1.0rem;
+  }
+}
