@@ -28,9 +28,9 @@ class Blog extends React.Component {
             <span className="discover__tag">volutpat</span>
             <span className="discover__tag">quis</span>
           </div>
-          <div class="discover__search">
-            <input type="text" class="discover__search__input" placeholder="Search a keyword" />
-            <button class="discover__search__button">Search</button>
+          <div className="discover__search">
+            <input type="text" className="discover__search__input" placeholder="Search a keyword" />
+            <button className="discover__search__button">Search</button>
           </div>
         </div>
       </div>

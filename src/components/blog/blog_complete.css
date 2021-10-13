@@ -64,6 +64,7 @@
 }
 
 .blog .blog__image {
+  max-width: 90%;
   margin: 0.5rem;
 }
 
@@ -123,4 +124,13 @@
   font-size: 3rem;
   font-weight: bold;
   font-family: "Libre Baskerville", sans-serif;
+}
+
+@media (max-width: 720px) {
+  .blog .blog__header,
+  .blog .blog__title,
+  .blog .blog__quote,
+  .blog .blog__description {
+    width: 95%;
+  }
 }
