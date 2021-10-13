@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.blog__list {
+  width: calc(9 * 100% / 10);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.blog__content {
+  width: calc(2 * 100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+
+.header__text {
+  font-size: 1.5rem;
+  color: #19647e;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.blog__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.blog__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.blog__card .blog__card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #37392e;
+}
+
+.blog__card .blog__card__image {
+  height: 150px;
+  width: 500px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.blog__card .blog__card__content .blog__card__heading {
+  font-size: 1.5rem;
+  margin: 0px;
+  font-family: "Old Standard TT", serif;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  cursor: pointer;
+}
+
+.blog__card .blog__card__content .blog__card__heading:hover {
+  opacity: 0.8;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.blog__card .blog__card__content .blog__card__description {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 5px;
+  color: #535353;
+  font-family: "Inter", sans-serif;
+}
+
+.blog__card .blog__card__content .blog__card__info {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #535353;
+}
+
+.blog__card .blog__card__content .blog__card__info .blog__card__tag {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  border-radius: 100px;
+  background-color: #eee5e5;
+  padding: 5px;
+}
+
+.blog__card .blog__card__content .blog__card__author {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.blog__card .blog__card__content .blog__card__author .author__image {
+  height: 20px;
+  border-radius: 100%;
+}
+
+.blog__card .blog__card__content .blog__card__author .author__name {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 10px;
+}
+
+.blog__discover {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+  overflow: inherit;
+  position: sticky;
+  top: 40px;
+}
+
+.blog__discover .header__text {
+  font-size: 1.5rem;
+  color: #19647e;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.blog__discover .discover__tag__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-area: myArea;
+  grid-template-areas: "myArea myArea . .";
+  margin-bottom: 25px;
+}
+
+.blog__discover .discover__tag__list .discover__tag {
+  font-size: 0.8rem;
+  border-radius: 2.5px;
+  border: #ddcecd solid 1px;
+  padding: 7.5px;
+  color: #535353;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.blog__discover .discover__tag__list .discover__tag:hover {
+  border-radius: 5px;
+  border: #535353 solid 1px;
+  color: black;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.blog__discover .discover__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.blog__discover .discover__search .discover__search__input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 100px;
+  border: #ddcecd solid 1px;
+  margin-right: 10px;
+}
+
+.blog__discover .discover__search .discover__search__button {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  width: 20%;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #19647e;
+  color: #f6f7f8;
+}
+
+.blog__discover .discover__search .discover__search__button:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  background-color: #28afb0;
+}

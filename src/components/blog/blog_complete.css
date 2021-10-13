@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog .blog__header {
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 15px;
+  border-bottom: #ddcecd solid 1px;
+}
+
+.blog .blog__header .blog__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.blog .blog__header .blog__info .author__image {
+  height: 30px;
+  border: #7d83ff solid 1.5px;
+  padding: 2px;
+  border-radius: 100%;
+}
+
+.blog .blog__header .blog__info .author__name {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+.blog .blog__header .blog__info .info {
+  margin-left: 10px;
+  font-size: 0.8rem;
+  color: #535353;
+}
+
+.blog .blog__header .follow {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: #19647e;
+  color: #f6f7f8;
+  cursor: pointer;
+}
+
+.blog .blog__header .follow:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  background-color: #28afb0;
+}
+
+.blog .blog__image {
+  margin: 0.5rem;
+}
+
+.blog .blog__title {
+  margin: 0.5rem;
+  width: 70%;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  text-align: left;
+}
+
+.blog .blog__quote {
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  width: 70%;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Old Standard TT", serif;
+  text-align: left;
+  color: #535353;
+}
+
+.blog .image__reference {
+  margin: 0.5rem;
+  width: 70%;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Inter", serif;
+  text-align: center;
+  color: #535353;
+}
+
+.blog .image__reference .reference__url {
+  color: #535353;
+}
+
+.blog .image__reference .reference__url:visited {
+  color: #535353;
+}
+
+.blog .blog__description {
+  margin: 0.5rem;
+  margin-top: 2rem;
+  width: 70%;
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: "Libre Baskerville", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+  white-space: pre-line;
+  line-height: 2rem;
+  color: #303030;
+}
+
+.blog .blog__description .first__letter {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Libre Baskerville", sans-serif;
+}
