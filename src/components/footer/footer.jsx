@@ -20,9 +20,9 @@ class Footer extends React.Component {
         </div>
         <div className="footer__content">
           <span className="footer__text">Contact Us</span>
-          <span className="footer__address">House No. 1479A, Sector 47B</span>
-          <span className="footer__address">Chandigarh, India</span>
-          <span className="footer__address">Mobile No. +91 63515 94043</span>
+          <span className="footer__address">Full address</span>
+          <span className="footer__address">Email address</span>
+          <span className="footer__address">Mobile No. +91 XXXXX XXXXX</span>
         </div>
         <div className="footer__content">
           <span className="footer__text">Sign Up for updates</span>
