@@ -4,6 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 
+import ScrollToTop from './ScrollToTop';
 import Header from "./components/header/header";
 import Footer from "./components/footer/footer";
 import Homepage from "./components/homepage/homepage";
@@ -16,22 +17,24 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
-          <Route exact path="/">
-            <div className="background__home">
-              <Header header_type="home" />
-              <Homepage />
-            </div>
-          </Route>
-          <Route exact path="/blog">
-            <Header />
-            <Blog />
-          </Route>
-          <Route exact path="/dummyBlog">
-            <Header />
-            <BlogComplete />
-          </Route>
-        </Switch>
+        <ScrollToTop>
+          <Switch>
+            <Route exact path="/">
+              <div className="background__home">
+                <Header header_type="home" />
+                <Homepage />
+              </div>
+            </Route>
+            <Route exact path="/blog">
+              <Header />
+              <Blog />
+            </Route>
+            <Route exact path="/dummyBlog">
+              <Header />
+              <BlogComplete />
+            </Route>
+          </Switch>
+        </ScrollToTop>
         <Footer />
       </div>
     </Router>
