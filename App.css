@@ -1,0 +1,14 @@
+.background__home {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("./assets/background/bg-002.jpg");
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 0 5px;  
+  background-size: cover;
+}
+
+@media (max-width: 300px) {
+  .background {
+    padding-bottom: 60px;
+  }
+}
