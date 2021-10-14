@@ -1,4 +1,5 @@
 import React from 'react';
+import { GrFavorite } from 'react-icons/gr';
 
 import './blog_complete.css';
 import './dummy_data';
@@ -25,6 +26,19 @@ class BlogComplete extends React.Component {
         <img className='blog__image' src={this.state.image} alt='blog_image' />
         <span className="image__reference">Photo from <a className='reference__url' href="https://picsum.photos/">Lorem Picsum</a></span>
         <p className='blog__description'><span className='first__letter'>{this.state.description.slice(0, 1)}</span>{this.state.description.slice(1,)}</p>
+        <div className="blog__footer">
+          <div className="tag__list">
+            <span class="text">Tags: </span>
+            <span className="tag">Lorem</span>
+            <span className="tag">Maecenas</span>
+            <span className="tag">adipiscing</span>
+            <span className="tag">metus</span>
+            <span className="tag">scelerisque</span>
+            <span className="tag">volutpat</span>
+            <span className="tag">quis</span>
+          </div>
+          <span><GrFavorite /></span>
+        </div>
       </div>
     );
   }
