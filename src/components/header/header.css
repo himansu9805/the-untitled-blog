@@ -1,5 +1,5 @@
 .nav__home {
-  padding: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,7 +8,7 @@
 }
 
 .nav {
-  padding: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,6 +16,7 @@
   background-color: #011627;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .nav__container {
@@ -40,4 +41,18 @@
   text-decoration-color: rgba(255, 255, 255, 1);
   color: #f6f7f8;
   cursor: pointer;
+}
+
+@media (max-width: 420px) {
+  .nav {
+    position: relative;
+  }
+
+  .nav__container {
+    flex-direction: column;
+  }
+
+  .nav__container .nav__item {
+    padding: 15px 0;
+  }
 }

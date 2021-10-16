@@ -19,7 +19,7 @@ class BlogComplete extends React.Component {
             <span className='author__name'>{this.state.author}</span>
             <span className='info'>Oct 1 · 5 min read</span>
           </div>
-          <button class="follow">Follow</button>
+          <button className="follow">Follow</button>
         </div>
         <h1 className='blog__title'>{this.state.title}</h1>
         <p className='blog__quote'>{this.state.quote}</p>

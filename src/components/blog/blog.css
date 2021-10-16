@@ -122,7 +122,8 @@
   margin-left: 10px;
   overflow: inherit;
   position: sticky;
-  top: 40px;
+  top: 90px;
+  margin-bottom: 30px;
 }
 
 .blog__discover .header__text {
@@ -161,7 +162,7 @@
 .blog__discover .discover__search {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 25px;
   width: 100%;
@@ -189,4 +190,93 @@
 .blog__discover .discover__search .discover__search__button:hover {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
   background-color: #28afb0;
+}
+
+@media (max-width: 1120px) {
+  .blog__list {
+    flex-direction: column-reverse;
+  }
+
+  .blog__discover {
+    width: 100%;
+    margin: 30px 0;
+
+    position: relative;
+    top: 0;
+  }
+
+  .blog__content {
+    width: 100%;
+  }
+
+  .blog__discover .discover__search .discover__search__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 710px) {
+  .blog__card__image {
+    max-width: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .blog__discover .discover__search .discover__search__button {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog__list {
+    width: auto;
+    padding: 8px;
+  }
+
+  .blog__discover .discover__tag__list {
+    grid-template-columns: repeat(auto-fill, 1fr);
+    grid-template-areas: none;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    
+    width: auto;
+  }
+
+  .blog__discover .discover__search .discover__search__button {
+    width: 40%;
+  }
+
+  .blog__card {
+    width: auto;
+    padding: 5px;
+  }
+
+  .blog__card .blog__card__content .blog__card__heading {
+    font-size: 1.2rem;
+  }
+
+  .blog__card .blog__card__content .blog__card__description {
+    font-size: 0.8rem;
+  }
+
+  .blog__card__image {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 420px) {
+  .blog__discover .discover__search .discover__search__button {
+    width: 40%;
+  }
+
+  .blog__card .blog__card__content .blog__card__heading {
+    font-size: 1.2rem;
+  }
+
+  .blog__card .blog__card__content .blog__card__description {
+    font-size: 0.8rem;
+  }
+
+  .blog__card__image {
+    max-width: 100px;
+  }
 }
