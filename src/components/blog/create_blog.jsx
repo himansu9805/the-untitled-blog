@@ -100,8 +100,8 @@ class CreateBlog extends React.Component {
               onClick={this._onBlockQuoteClick.bind(this)}
               size={25}
             />
-            <FaLink className="option__item" size={25} />
-            <FaSearch className="option__item" size={25} />
+            {/*<FaLink className="option__item" size={25} />
+            <FaSearch className="option__item" size={25} />*/}
           </div>
           <div>
             <Editor
