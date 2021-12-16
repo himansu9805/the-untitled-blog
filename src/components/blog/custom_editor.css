@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  width: 60%;
+}
+
+.text__box {
+  border: transparent !important;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 20px;
+  outline: none;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.text__box::placeholder {
+  color: #bdbdbd;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: 2.5rem;
+  padding-left: 40px;
+}
+
+.title:focus {
+  padding-left: 39px;
+  border-left: #bdbdbd solid 1px !important;
+}
+
+.story {
+  font-size: 1.1rem;
+  display: block;
+  overflow: none;
+  resize: none;
+  margin: 0%;
+  margin-left: 30px;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  animation: slide 0.5s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.plus__menu__close {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transform: rotate(0deg);
+}
+
+.plus__menu__open {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transform: rotate(180deg);
+}
+
+.text__options {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(0px);
+  animation: slide 0.5s 1 cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.option__item {
+  margin-left: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.editor__toolbar {
+  margin: 10px;
+}

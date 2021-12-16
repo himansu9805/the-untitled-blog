@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+
+div.DraftEditor-root {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.25rem;
+  width: 55vw;
+  min-height: 100vh;
+}
+div.DraftEditor-editorContainer,
+div.public-DraftEditor-content {
+  height: 100%;
+}

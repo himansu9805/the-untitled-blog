@@ -1,5 +1,6 @@
 import React from 'react';
-import { GrFavorite } from 'react-icons/gr';
+import { GrFavorite, GrTwitter, GrFacebook, GrLinkedin, GrLink, GrSave } from 'react-icons/gr';
+import { BiComment } from 'react-icons/bi';
 
 import './blog_complete.css';
 import './dummy_data';
@@ -37,7 +38,19 @@ class BlogComplete extends React.Component {
             <span className="tag">volutpat</span>
             <span className="tag">quis</span>
           </div>
-          <span><GrFavorite /></span>
+          <div className="blog__actions">
+            <div className="left">
+              <span className="icons"><GrFavorite /></span>
+              <span className="icons"><BiComment /></span>
+            </div>
+            <div className="right">
+              <span className="social__icons"><GrTwitter /></span>
+              <span className="social__icons"><GrFacebook /></span>
+              <span className="social__icons"><GrLinkedin /></span>
+              <span className="social__icons"><GrLink /></span>
+              <span className="social__icons"><GrSave /></span>
+            </div>
+          </div>
         </div>
       </div>
     );

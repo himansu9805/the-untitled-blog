@@ -1,13 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 import BlogCard from "./blog_card";
 import DummyData from "./dummy_data";
 
 import './blog.css';
 
-class Blog extends React.Component {
-  render() {
-    return (
+function Blog(props) {
+  const history = useHistory();
+
+  const gotoCreateBlog = () => history.push('/blog/create');
+  const gotoLogin = () => history.push('/login');
+
+  return (
+    <div>
+      <div className="blog__create">
+        <button className="create" onClick={() => props.session ? gotoCreateBlog() : gotoLogin()}><span className="text">START WRITING</span></button>
+        <span className="text">It's easy and free to post your thinking on any topic and connect with millions of readers.</span>
+      </div>
       <div className="blog__list">
         <div className="blog__content">
           <h1 className="header__text">LATEST BLOGS</h1>
@@ -34,8 +44,8 @@ class Blog extends React.Component {
           </div>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Blog;

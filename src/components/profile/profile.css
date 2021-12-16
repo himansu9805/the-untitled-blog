@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+.profile {
+  margin: 50px;
+}
+
+.profile__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.profile__header .user__image {
+  height: 250px;
+  width: 250px;
+  margin: 10px;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.profile__header .text {
+  margin-bottom: 10px;
+}
+
+.profile__header .text .user__name {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0;
+}
+
+.profile__header .text .user__data {
+  font-size: large;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile__header .text .user__quote {}
+
+.profile__header .text .user__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile__header .text .user__info .left {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.user__info .user__info__item {
+  color: #535353;
+  margin-right: 30px;
+}
+
+.edit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: #19647e;
+  color: #f6f7f8;
+  cursor: pointer;
+}
+
+.edit:hover {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  background-color: #28afb0;
+}
+
+.edit .text {
+  margin: 0px;
+  margin-left: 5px;
+}
